@@ -1,0 +1,19 @@
+.hero {
+  text-align: center;
+  color: var(--GrayishBlue);
+  padding-bottom: 5em;
+  .copy{
+    
+    margin-bottom: 2.5em;
+  }
+  &__image{
+    height: 300px;
+    margin: 0 calc(-1 * var(--wrapperSpace));
+    background: url("../../static/images/image-mockups.png") center bottom no-repeat,url("../../static/images/bg-intro-mobile.svg") center center no-repeat;
+    background-size: 345px, cover;
+    margin-bottom: 1.2em;
+  }
+}
+.wrapper {
+  padding: 0 var(--wrapperSpace);
+}
