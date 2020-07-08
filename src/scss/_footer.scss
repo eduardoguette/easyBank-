@@ -1,0 +1,28 @@
+.footer {
+  padding: 2em 0;
+  background: var(--DarkBlue);
+  color: var(--White);
+  text-align: center;
+  &__link {
+    display: block;
+    color: var(--gray);
+    text-decoration: none;
+    margin-bottom: 2em;
+  }
+  img {
+    margin: auto;
+    display: block;
+    margin-bottom: 2em;
+  }
+  &__social {
+    display: grid;
+    grid-template-columns: repeat(5, 25px);
+    grid-column-gap: 1em;
+    justify-content: center;
+    margin: 2em 0;
+  }
+  &__copyright{
+    margin-top: 2.5em;
+    color: var(--grayBlue);
+  }
+}
