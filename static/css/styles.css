@@ -20,7 +20,7 @@
 
 .hero {
   text-align: center;
-  color: var(--GrayishBlue);
+  color: var(--grayBlue);
   padding-bottom: 5em; }
   .hero .copy {
     margin-bottom: 2.5em; }
@@ -40,7 +40,42 @@
 
 .why {
   text-align: center;
-  background: var(--LightGrayishBlue); }
+  background: var(--gray);
+  padding-top: 5em;
+  color: var(--grayBlue); }
+  .why .copy {
+    margin-bottom: 3em; }
+  .why__item .copy {
+    margin-bottom: 2em;
+    font-size: 1em; }
+  .why__item img {
+    margin-bottom: 1.4em; }
+
+.lastestArticles {
+  background: var(--LightGray);
+  padding-top: 5em; }
+  .lastestArticles .title__h1, .lastestArticles .title__h2, .lastestArticles .title__h3 {
+    text-align: center; }
+  .lastestArticles .title__h3 {
+    text-align: left; }
+  .lastestArticles__grid {
+    display: grid;
+    grid-row-gap: 2em; }
+  .lastestArticles__item {
+    border-radius: 0.5em;
+    overflow: hidden;
+    background: var(--White); }
+    .lastestArticles__item-content {
+      padding: 1.8em; }
+    .lastestArticles__item .copy {
+      color: var(--grayBlue); }
+    .lastestArticles__item small {
+      color: var(--grayBlue);
+      margin-bottom: 1em;
+      display: block; }
+    .lastestArticles__item img {
+      width: 100%;
+      object-fit: cover; }
 
 body {
   margin: 0;
@@ -54,13 +89,19 @@ body {
 .is-hidden {
   display: none !important; }
 
-.title__h1 {
+.title__h1, .title__h2, .title__h3 {
   font-size: 2.5em;
   color: var(--DarkBlue);
   font-weight: 300;
   line-height: 1.3em;
   margin: 0;
-  margin-bottom: .5em; }
+  margin-bottom: 0.5em; }
+
+.title__h2 {
+  font-size: 1.5em; }
+
+.title__h3 {
+  font-size: 1em; }
 
 button.btn.btn {
   font-family: "Public Sans", sans-serif;

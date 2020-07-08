@@ -11,12 +11,13 @@
   --LightGray: hsl(0, 0%, 98%);
   --White: hsl(0, 0%, 100%);
   font-size: 16px;
-  --wrapperSpace: 1.5em; 
+  --wrapperSpace: 1.5em;
 }
 @import "./header";
 @import "./hero";
 @import "./menu";
 @import "./why";
+@import "./lastestArticles";
 body {
   margin: 0;
   padding: 0;
@@ -26,19 +27,26 @@ body {
   line-height: 1.7;
   font-size: 0.9em;
 }
-.is-hidden{
+.is-hidden {
   display: none !important;
 }
 
 .title {
-
   &__h1 {
     font-size: 2.5em;
     color: var(--DarkBlue);
     font-weight: 300;
     line-height: 1.3em;
     margin: 0;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
+  }
+  &__h2 {
+    @extend .title__h1;
+    font-size: 1.5em;
+  }
+  &__h3 {
+    @extend .title__h1;
+    font-size: 1em;
   }
 }
 button.btn.btn {

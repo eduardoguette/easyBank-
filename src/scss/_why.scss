@@ -1,4 +1,19 @@
-.why{
+.why {
   text-align: center;
-  background: var(--LightGray);
+  background: var(--gray);
+  padding-top: 5em;
+  color: var(--grayBlue);
+  .copy {
+    margin-bottom: 3em;
+  }
+  &__item {
+    
+    .copy {
+      margin-bottom: 2em;
+      font-size: 1em;
+    }
+    img {
+      margin-bottom: 1.4em;
+    }
+  }
 }
