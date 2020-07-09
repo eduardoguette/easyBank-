@@ -9,7 +9,7 @@
     text-decoration: none;
     margin-bottom: 2em;
   }
-  img {
+  &__logo {
     margin: auto;
     display: block;
     margin-bottom: 2em;
@@ -21,8 +21,39 @@
     justify-content: center;
     margin: 2em 0;
   }
-  &__copyright{
+  &__copyright {
     margin-top: 2.5em;
     color: var(--grayBlue);
+  }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      display: grid;
+      grid-column-gap: 7em;
+      grid-template-columns: 200px 1fr 400px;
+      grid-template-areas:
+        "logo links button"
+        "social links copyright";
+    }
+    &__links {
+      grid-area: links;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+    }
+    &__logo {
+      grid-area: logo;
+      margin: initial;
+    }
+    &__social {
+      grid-area: social;
+    }
+    &__botton{
+      grid-area: button;
+      text-align: right;
+    }
+    &__copyright {
+      grid-area: copyright;
+      text-align: right;
+    }
   }
 }

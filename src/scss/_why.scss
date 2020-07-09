@@ -1,19 +1,32 @@
 .why {
   text-align: center;
   background: var(--gray);
-  padding-top: 5em;
+  padding: 5em 0;
   color: var(--grayBlue);
   .copy {
     margin-bottom: 3em;
   }
   &__item {
-    
     .copy {
       margin-bottom: 2em;
       font-size: 1em;
     }
     img {
       margin-bottom: 1.4em;
+    }
+  }
+  @media screen and (min-width: 768px){
+    text-align: left;
+    &__grid{
+      display: grid;
+      grid-column-gap: 1em;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1024px){
+    &__grid{
+
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }

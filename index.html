@@ -9,21 +9,51 @@
   </head>
   <body>
     <header class="header">
-      <img src="./static/images/logo.svg" alt="" />
-      <nav class="menu"></nav>
+      <div class="wrapper">
+        <div class="header__content">
+          <img class="header__logo" src="./static/images/logo.svg" alt="" />
+          <input type="checkbox"  id="menu" class="menu__checkbox">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="">Contact</a>
+            </li>
+            <li class="menu__item">
+              <a href="">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a href="">Careers</a>
+            </li>
+          </ul>
+
+          <button class="btn btn" href="#">Request Invite</button>
+          <label for="menu" class="menu__button"></label>
+        </div>
+      </div>
     </header>
 
-    <section class="hero ">
+    <section class="hero">
       <div class="wrapper">
-        <div class="hero__image"></div>
-        <h1 class="title__h1">Next generation digital banking</h1>
-        <p class="copy">
-          Take your financial life online. Your EasyBank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
-        </p>
-        <button class="btn btn" href="#">Request Invite</button>
+        <div class="hero__content">
+          <div class="hero__image">
+            <img class="hero__imageSrc" src="./static/images/image-mockups.png" alt="">
+          </div>
+          <div class="hero__description">
+            <h1 class="title__h1">Next generation digital banking</h1>
+            <p class="copy">
+              Take your financial life online. Your EasyBank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+            </p>
+            <button class="btn btn" href="#">Request Invite</button>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="why ">
+    <section class="why">
       <div class="wrapper">
         <h1 class="title__h2">Why choose EasyBank</h1>
         <p class="copy">
@@ -61,7 +91,7 @@
         </div>
       </div>
     </section>
-    <section class="lastestArticles ">
+    <section class="lastestArticles">
       <div class="wrapper">
         <h1 class="title__h1">
           Lastest Articles
@@ -112,7 +142,7 @@
     </section>
     <footer class="footer">
       <div class="wrapper">
-        <img  src="./static/images/logo-white.svg" alt="" />
+        <img clas="footer_logo" src="./static/images/logo-white.svg" alt="" />
         <p class="footer__social">
           <a href="#" class="icon__facebook"> </a>
           <a href="#" class="icon__youtube"> </a>
@@ -120,18 +150,18 @@
           <a href="#" class="icon__pinterest"> </a>
           <a href="#" class="icon__instagram"> </a>
         </p>
-        <a href="#" class="footer__link">About Us </a>
-        <a href="#" class="footer__link">Contact </a>
-        <a href="#" class="footer__link">Blog </a>
-        <a href="#" class="footer__link">Careers </a>
-        <a href="#" class="footer__link">Support </a>
-        <a href="#" class="footer__link">Privacy Policy </a>
-        <div>
-
+        <div class="footer__links">
+          <a href="#" class="footer__link">About Us </a>
+          <a href="#" class="footer__link">Contact </a>
+          <a href="#" class="footer__link">Blog </a>
+          <a href="#" class="footer__link">Careers </a>
+          <a href="#" class="footer__link">Support </a>
+          <a href="#" class="footer__link">Privacy Policy </a>
+        </div>
+        <div class="footer__botton">
           <button class="btn btn" href="#">Request Invite</button>
         </div>
         <p class="footer__copyright">
-
           ©Easybank. All Rights Reserved
         </p>
       </div>
